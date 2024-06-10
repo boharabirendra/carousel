@@ -64,7 +64,7 @@ class Carousel {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-//creating carousel container
+//creating carousel class object
 const carousel =  new Carousel(".carousel-container");
 
 
