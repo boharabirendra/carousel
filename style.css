@@ -4,7 +4,7 @@
   height: 700px;
   overflow: hidden;
   position: relative;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 10px;
   box-shadow: 0px 0px 5px gray;
   margin: auto;
@@ -20,18 +20,21 @@
 
 .prev-btn, .next-btn{
   position: absolute;
-  padding: 8px 14px;
-  border-radius: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
   border: none;
   margin: 1px;
   letter-spacing: 0.5px;
-  background-color: #d6d3d3;
+  background-color: #FFF;
+  opacity: 0.4;
   cursor: pointer;
   top: 45%;
+  transition: opacity 1s;
 }
 
 .prev-btn:hover, .next-btn:hover{
     background-color: #FFF;
+    opacity: 1;
 }
 
 .next-btn{

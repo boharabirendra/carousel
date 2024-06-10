@@ -50,7 +50,7 @@ var Carousel = /** @class */ (function () {
     return Carousel;
 }());
 document.addEventListener("DOMContentLoaded", function () {
-    //creating carousel container
+    //creating carousel class object
     var carousel = new Carousel(".carousel-container");
     //getting carousel container from DOM
     var carouselContainer = document.querySelector(".carousel-container");
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var dotContainer = document.createElement("div");
     dotContainer.style.position = "absolute";
     dotContainer.style.left = "50%";
-    dotContainer.style.bottom = "8px";
+    dotContainer.style.bottom = "12px";
     dotContainer.style.display = "flex";
     dotContainer.style.gap = "5px";
     var dotContainerWidth = carousel.getNumberOfImages() * 28 +
@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dot.style.backgroundColor = i === 0 ? "#FFF" : "";
         dot.style.border = "2px solid #FFF";
         dot.style.borderRadius = "5px";
+        dot.style.transition = "background-color 1s";
         dotContainer.appendChild(dot);
     }
     carouselContainer === null || carouselContainer === void 0 ? void 0 : carouselContainer.appendChild(dotContainer);

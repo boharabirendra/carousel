@@ -98,7 +98,7 @@ const carouselContainer = document.querySelector(".carousel-container");
  const dotContainer = document.createElement("div");
  dotContainer.style.position = "absolute";
  dotContainer.style.left = "50%";
- dotContainer.style.bottom = "8px";
+ dotContainer.style.bottom = "12px";
  dotContainer.style.display = "flex";
  dotContainer.style.gap = "5px";
 
@@ -124,6 +124,7 @@ const carouselContainer = document.querySelector(".carousel-container");
     dot.style.backgroundColor = i === 0 ? "#FFF" : "";
     dot.style.border = "2px solid #FFF";
     dot.style.borderRadius = "5px";
+    dot.style.transition = "background-color 1s";
     dotContainer.appendChild(dot);
  }
  carouselContainer?.appendChild(dotContainer);
