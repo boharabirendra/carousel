@@ -19,7 +19,7 @@ class Carousel {
         this.counter = dotNumber;
     }
     this.images.forEach((image: HTMLImageElement, index: number) => {
-        image.style.transform = `translate(-${this.counter * 100}%)`;
+        image.style.transform = `translateX(-${this.counter * 100}%)`;
     });
 
     this.removeDotBackgroundColor();

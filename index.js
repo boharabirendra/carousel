@@ -13,7 +13,7 @@ var Carousel = /** @class */ (function () {
             this.counter = dotNumber;
         }
         this.images.forEach(function (image, index) {
-            image.style.transform = "translate(-".concat(_this.counter * 100, "%)");
+            image.style.transform = "translateX(-".concat(_this.counter * 100, "%)");
         });
         this.removeDotBackgroundColor();
         var dot = document.querySelector("#dot-".concat(this.counter));
